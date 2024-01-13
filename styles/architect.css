@@ -10,7 +10,14 @@
 }
 
 .button-primary {
-    
+    border-radius: 8px;
+    color: #FFF;
+    background: #FF900E;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 0;
 
 }
 
@@ -33,7 +40,7 @@ nav {
     color: #131313;
 }
 
-nav > ul {
+nav>ul {
     display: flex;
 }
 
@@ -68,3 +75,35 @@ nav li a {
 
 }
 
+.banner img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* responsive media queries */
+
+/* mobile devices */
+
+@media screen and (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+    
+}
+
+/* tablet or medium devices */
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header {
+        padding: 50px;
+    }
+    
+    nav {
+        flex-direction: column;
+    }
+
+}
